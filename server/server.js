@@ -16,7 +16,7 @@ var io = socketIO(server);
 app.use(express.static(publicPath));
 
 io.on('connection', (socket)=>{
-  console.log('New user connected');
+  console.log('New user connectedd');
 
   socket.on('createMessage', (message)=>{
     console.log('createMessage',message);
